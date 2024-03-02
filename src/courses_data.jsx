@@ -3,7 +3,7 @@ const courses_data = [
       id: 1,
       title: 'The Complete 2024 Web Development Bootcamp',
       category:'Flutter',
-      rating:5,
+      rating:3,
       price: '$59.99',
       linkImg:
       '	https://img-c.udemycdn.com/course/240x135/1565838_e54e_18.jpg'
@@ -21,7 +21,7 @@ const courses_data = [
       id: 3,
       title: 'Learn Python: The Complete Python Programming CourseLearn A-Z everything about Python, from the basics, to advanced topics like Python GUI, Python Data Analysis, and more!',
       category:'Python',
-      rating:4,
+      rating:5,
       price: '$59.99',
       linkImg:
         'https://imgs.search.brave.com/Nhj_cLAZOWcUjlnR8QMX8A02rX-2RYra9w-0j-B9Rbg/rs:fit:750:422:1/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzL2IxLzJi/L2NjL2IxMmJjYzA4/YmQ4YzlhOTFjMmM5/NjY3ZTM5NzE1NzA0/LmpwZw',
@@ -39,7 +39,7 @@ const courses_data = [
       id: 5,
       title: 'Microsoft Excel - Excel from Beginner to Advanced',
       category:'Flutter',
-      rating:4,
+      rating:3,
       price: '$19.99',
       linkImg:
         'https://img-c.udemycdn.com/course/240x135/793796_0e89_2.jpg',
@@ -48,7 +48,7 @@ const courses_data = [
       id: 6,
       title: 'Ultimate AWS Certified Solutions Architect Associate SAA-C03',
       category:'Flutter',
-      rating:5,
+      rating:3,
       price: '$29.99',
       linkImg:
         'https://img-c.udemycdn.com/course/240x135/2196488_8fc7_10.jpg',
@@ -66,7 +66,7 @@ const courses_data = [
       id: 8,
       title: 'Machine Learning A-Z: AI, Python & R + ChatGPT Prize [2024]',
       category:'Flutter',
-      rating:4,
+      rating:5,
       price: '$59.99',
       sale: 63,  
       linkImg:
