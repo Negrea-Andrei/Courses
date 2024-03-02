@@ -4,6 +4,8 @@ import Hero from "./components/Hero";
 import Companies from "./components/Companies";
 import Courses from "./components/Courses";
 import Achievement from "./components/Achievement.jsx"
+import Feedback from "./components/Feedback.jsx";
+import Register from "./components/Register.jsx";
 
 const App = () => {
   return (
@@ -13,6 +15,8 @@ const App = () => {
       <Companies />
       <Courses />
       <Achievement />
+      <Feedback />
+      <Register />
     </>
   );
 };
