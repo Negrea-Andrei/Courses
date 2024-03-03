@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 import logo from "../assets/logo.svg";
 import hamburger from "../assets/hamburgerMenu.svg";
 import close from "../assets/close.svg";
@@ -16,11 +17,21 @@ const NavBar = () => {
 
         <div className="hidden md:flex items-center">
           <ul className="flex gap-4">
-            <li className="cursor-pointer">Home</li>
-            <li className="cursor-pointer">About</li>
-            <li className="cursor-pointer">Support</li>
-            <li className="cursor-pointer">Platform</li>
-            <li className="cursor-pointer">Pricing</li>
+            <li className="cursor-pointer">
+              <Link to="/"> Home</Link>
+            </li>
+            <li className="cursor-pointer">
+              <Link to="/about">About</Link>
+            </li>
+            <li className="cursor-pointer">
+              <Link to="/support">Support</Link>
+            </li>
+            <li className="cursor-pointer">
+              <Link to="/platform">Platform</Link>
+            </li>
+            <li className="cursor-pointer">
+              <Link to="/pricing">Pricing</Link>
+            </li>
           </ul>
         </div>
 
@@ -39,13 +50,27 @@ const NavBar = () => {
         </div>
       </div>
 
-      <div className={toggle ? "hidden" : "absolute z-10 p-4 bg-white w-full px-8 md:hidden"}>
+      <div
+        className={
+          toggle ? "hidden" : "absolute z-10 p-4 bg-white w-full px-8 md:hidden"
+        }
+      >
         <ul>
-          <li className="p-4 hover:bg-gray-100 cursor-pointer">Home</li>
-          <li className="p-4 hover:bg-gray-100 cursor-pointer">About</li>
-          <li className="p-4 hover:bg-gray-100 cursor-pointer">Support</li>
-          <li className="p-4 hover:bg-gray-100 cursor-pointer">Platform</li>
-          <li className="p-4 hover:bg-gray-100 cursor-pointer">Pricing</li>
+          <li className="p-4 hover:bg-gray-100 cursor-pointer">
+            <Link to="/"> Home</Link>
+          </li>
+          <li className="p-4 hover:bg-gray-100 cursor-pointer">
+            <Link to="/about">About</Link>
+          </li>
+          <li className="p-4 hover:bg-gray-100 cursor-pointer">
+            <Link to="/support">Support</Link>
+          </li>
+          <li className="p-4 hover:bg-gray-100 cursor-pointer">
+            <Link to="/platform">Platform</Link>
+          </li>
+          <li className="p-4 hover:bg-gray-100 cursor-pointer">
+            <Link to="/pricing">Pricing</Link>
+          </li>
         </ul>
         <div className="flex flex-col my-4 gap-4">
           <button className="flex justify-center items-center bg-transparent px-6 py-4 gap-2">

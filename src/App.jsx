@@ -1,25 +1,24 @@
 import React from "react";
 import NavBar from "./components/NavBar";
-import Hero from "./components/Hero";
-import Companies from "./components/Companies";
-import Courses from "./components/Courses";
-import Achievement from "./components/Achievement.jsx"
-import Feedback from "./components/Feedback.jsx";
-import Register from "./components/Register.jsx";
-import Footer from "./components/Footer.jsx";
+import Home from "./components/Home.jsx";
+import About from "./components/About.jsx";
+import Support from "./components/Support.jsx";
+import Pricing from "./components/Pricing.jsx";
+import Platform from "./components/Platform.jsx";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 const App = () => {
   return (
-    <>
+    <Router>
       <NavBar />
-      <Hero />
-      <Companies />
-      <Courses />
-      <Achievement />
-      <Feedback />
-      <Register />
-      <Footer />
-    </>
+      <Routes>
+        <Route path="/" element={<Home/>}/>
+        <Route path="/about" element={<About />}/>
+        <Route path="/support" element={<Support />}/>
+        <Route path="/platform" element={<Platform />}/>
+        <Route path="/pricing" element={<Pricing />}/>
+      </Routes>
+    </Router>
   );
 };
 
