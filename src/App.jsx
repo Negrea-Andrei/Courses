@@ -6,6 +6,7 @@ import Courses from "./components/Courses";
 import Achievement from "./components/Achievement.jsx"
 import Feedback from "./components/Feedback.jsx";
 import Register from "./components/Register.jsx";
+import Footer from "./components/Footer.jsx";
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
       <Achievement />
       <Feedback />
       <Register />
+      <Footer />
     </>
   );
 };
